@@ -30,16 +30,16 @@
 
     /* Primary */
 
-    --color1: hsl(217, 28%, 15%);
-    --color2: hsl(218, 28%, 13%);
-    --color3: hsl(216, 53%, 9%);
-    --color4: hsl(219, 30%, 18%);
+    --pc-1: hsl(217, 28%, 15%);
+    --pc-2: hsl(218, 28%, 13%);
+    --pc-3: hsl(216, 53%, 9%);
+    --pc-4: hsl(219, 30%, 18%);
 
     /* Accent */
 
-    --color1: hsl(176, 68%, 64%);
-    --color2: hsl(198, 60%, 50%);
-    --color3: hsl(0, 100%, 63%);
+    --sc-1: hsl(176, 68%, 64%);
+    --sc-2: hsl(198, 60%, 50%);
+    --sc-3: hsl(0, 100%, 63%);
 
     /* Neutral */
 
@@ -53,7 +53,7 @@
     /* Font Families */
 
     --ff-body: 'Open Sans', sans-serif;
-    --ff-title: 'Poppins', sans-serif;
+    --ff-title: 'Raleway', sans-serif;
 
 
     /* Font Sizes */
@@ -61,49 +61,91 @@
     /* @link https://utopia.fyi/type/ */
 
 
-    /* Step 0: 16px → 18px */
-    --step-0: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+    /* Step -3: 10px → 12px */
+    --step--3: clamp(0.625rem, 0.5556rem + 0.2222vw, 0.75rem);
 
-    /* Step 0: 24px → 40px */
-    --step-1: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+    /* Step -2: 10px → 14px */
+    --step--2: clamp(0.625rem, 0.5rem + 0.4444vw, 0.875rem);
+
+    /* Step -1: 12px → 16px */
+    --step--1: clamp(0.75rem, 0.6667rem + 0.3333vw, 1rem);
+
+    /* Step 0: 14px → 16px */
+    --fluid-14-16: clamp(0.875rem, 0.8182rem + 0.2424vw, 1rem);
+    /* 14px → 16px */
+    --fluid-14-20: clamp(0.875rem, 0.7045rem + 0.7273vw, 1.25rem);
+
+    /* Step 1: 18px → 20px */
+    --step-1: clamp(1.125rem, 1.0625rem + 0.125vw, 1.25rem);
+
+    /* Step 2: 18px → 32px */
+    --step-2: clamp(1.125rem, 0.875rem + 1.1667vw, 2rem);
+
+    /* Step 3: 18px → 40px */
+    --step-3: clamp(1.125rem, 0.625rem + 2.0833vw, 2.5rem);
+
+    /* Step 4: 24px → 40px */
+    --fluid-24-40: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
 
 
     /**
      * MEASUREMENTS
     */
 
-    /* Space 2xs: 8px → 12px */
-    --space-2xs: clamp(0.5rem, 0.412rem + 0.3756vw, 0.75rem);
-    /* Space xs: 12px → 18px */
-    --space-xs: clamp(0.75rem, 0.618rem + 0.5634vw, 1.125rem);
-    /* Space s: 16px → 24px */
-    --space-s: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
-    /* Space m: 24px → 36px */
-    --space-m: clamp(1.5rem, 1.2359rem + 1.1268vw, 2.25rem);
-    /* Space l: 32px → 48px */
-    --space-l: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
-    /* Space xl: 48px → 72px */
-    --space-xl: clamp(3rem, 2.4718rem + 2.2535vw, 4.5rem);
-    /* Space 2xl: 72px → 108px */
-    --space-2xl: clamp(4.5rem, 3.7077rem + 3.3803vw, 6.75rem);
-    /* Space 3xl: 108px → 162px */
-    --space-3xl: clamp(6.75rem, 5.5616rem + 5.0704vw, 10.125rem);
+    /* Space 2xs: 8px → 10px */
+    --space-2xs: clamp(0.5rem, 0.456rem + 0.1878vw, 0.625rem);
+    /* Space xs: 12px → 15px */
+    --space-xs: clamp(0.75rem, 0.684rem + 0.2817vw, 0.9375rem);
+    /* Space s: 16px → 20px */
+    --space-s: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+    /* Space m: 24px → 30px */
+    --space-m: clamp(1.5rem, 1.368rem + 0.5634vw, 1.875rem);
+    /* Space l: 32px → 40px */
+    --space-l: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+    /* Space xl: 48px → 60px */
+    --space-xl: clamp(3rem, 2.7359rem + 1.1268vw, 3.75rem);
+    /* Space 2xl: 64px → 80px */
+    --space-2xl: clamp(4rem, 3.6479rem + 1.5023vw, 5rem);
+    /* 64px → 84px */
+    --fluid-64-84: clamp(4rem, 3.4318rem + 2.4242vw, 5.25rem);
+    /* Space 3xl: 96px → 120px */
+    --space-3xl: clamp(6rem, 5.4718rem + 2.2535vw, 7.5rem);
+    /* Space 4xl: 128px → 160px */
+    --space-4xl: clamp(8rem, 7.2958rem + 3.0047vw, 10rem);
 
     /* One-up pairs */
-    /* Space 2xs-xs: 8px → 18px */
-    --space-2xs-xs: clamp(0.5rem, 0.2799rem + 0.939vw, 1.125rem);
-    /* Space xs-s: 12px → 24px */
-    --space-xs-s: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
-    /* Space s-m: 16px → 36px */
-    --space-s-m: clamp(1rem, 0.5599rem + 1.8779vw, 2.25rem);
-    /* Space m-l: 24px → 48px */
-    --space-m-l: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
-    /* Space l-xl: 32px → 72px */
-    --space-l-xl: clamp(2rem, 1.1197rem + 3.7559vw, 4.5rem);
-    /* Space xl-2xl: 48px → 108px */
-    --space-xl-2xl: clamp(3rem, 1.6796rem + 5.6338vw, 6.75rem);
-    /* Space 2xl-3xl: 72px → 162px */
-    --space-2xl-3xl: clamp(4.5rem, 2.5194rem + 8.4507vw, 10.125rem);
+    /* Space 2xs-xs: 8px → 15px */
+    --space-2xs-xs: clamp(0.5rem, 0.346rem + 0.6573vw, 0.9375rem);
+    /* Space xs-s: 12px → 20px */
+    --space-xs-s: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+    /* Space s-m: 16px → 30px */
+    --space-s-m: clamp(1rem, 0.6919rem + 1.3146vw, 1.875rem);
+    /* Space m-l: 24px → 40px */
+    --space-m-l: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+    /* Space 6xl: 24px → 57px */
+    --fluid-24-57: clamp(1.5rem, 0.7738rem + 3.0986vw, 3.5625rem);
+    /* Space 7xl: 24px → 73px */
+    --fluid-24-73: clamp(1.5rem, 0.4217rem + 4.6009vw, 4.5625rem);
+    /* Space l-xl: 32px → 60px */
+    --space-l-xl: clamp(2rem, 1.3838rem + 2.6291vw, 3.75rem);
+    /* 48px → 56px */
+    --fluid-48-56: clamp(3rem, 2.7727rem + 0.9697vw, 3.5rem);
+    /* Space xl-2xl: 48px → 80px */
+    --space-xl-2xl: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+    /* 50px → 66px */
+    --fluid-50-66: clamp(3.125rem, 2.6705rem + 1.9394vw, 4.125rem);
+    /* Space 2xl-3xl: 64px → 120px */
+    --space-2xl-3xl: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem);
+    /* 70px → px */
+    --fluid-70-90: clamp(4.375rem, 3.8068rem + 2.4242vw, 5.625rem);
+    /* 80px → 104px */
+    --fluid-80-104: clamp(5rem, 4.3182rem + 2.9091vw, 6.5rem);
+    /* Space 3xl-4xl: 96px → 160px */
+    --space-3xl-4xl: clamp(6rem, 4.5915rem + 6.0094vw, 10rem);
+    /* Space 5xl: 260px → 285px */
+    --space-5xl: clamp(16.25rem, 15.318rem + 4.688vw, 17.8125rem);
+    /* 240px → 280px */
+    --fluid-240-280: clamp(15rem, 13.8636rem + 4.8485vw, 17.5rem);
 }
 
 @media (min-width: 770px) {
@@ -180,6 +222,7 @@ input {
 
 button {
     cursor: pointer;
+    font-family: var(--ff-title);
 }
 
 img {
@@ -188,16 +231,16 @@ img {
 }
 
 p {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: var(--ff-body);
-    font-weight: 800;
-    color: #FFFFFF;
+    font-family: var(--ff-title);
+    font-weight: 700;
+    color: var(--neutral1);
 }
 
 html {
@@ -207,10 +250,14 @@ html {
 }
 
 body {
-    font-size: var(--fs-standard);
+    font-size: var(--step-0);
     font-family: var(--ff-body);
     overflow-x: hidden;
-    background-color: var(--color1);
+    background-color: var(--pc-2);
     color: var(--neutral1);
     min-height: 100vh;
+}
+
+main {
+    position: relative;
 }

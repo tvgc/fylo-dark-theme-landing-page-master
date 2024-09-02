@@ -1,0 +1,206 @@
+/*-----------------------------------*\
+  #L-HEADER
+\*-----------------------------------*/
+.l-header {
+    padding-block-start: var(--fluid-24-73);
+    background-color: var(--pc-1);
+}
+
+.l-header__container {
+    max-width: 80rem;
+    /*1.280px*/
+    padding-inline: 1.5rem;
+    /*24px*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*min-width = max-width: 1.280 + padding-inline: 24px (.l-header)*/
+@media (min-width: 1328px) {
+    .l-header {
+        padding-inline: 0;
+    }
+}
+
+/*-----------------------------------*\
+  #L-CONTAINER
+\*-----------------------------------*/
+.l-container {
+    /*max-width: 68.75rem;
+    
+    padding-inline: 1.5rem;
+      
+    Project doesn't present standard max-with, padding-inline. Instead, other layout classes has the mains layout proprieties*/
+
+    margin-inline: auto;
+}
+
+@media (min-width: 1100px) {
+    .l-container {
+        /*padding-inline: 0;*/
+    }
+}
+
+
+/*-----------------------------------*\
+  #L-HERO
+\*-----------------------------------*/
+.l-hero {
+    padding-block-start: var(--space-xl-2xl);
+    /* Space xl-2xl: 48px → 80px */
+    padding-block-end: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+    background-color: var(--pc-1);
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+    .l-hero {
+        background-image: url('../images/bg-curvy-desktop.svg');
+    }
+}
+
+.l-hero__container {
+    max-width: 80rem;
+    /*1.280px*/
+    padding-inline: 2.25rem;
+    /*36px*/
+    text-align: center;
+}
+
+
+/*-----------------------------------*\
+  #L-FEATURES
+\*-----------------------------------*/
+.l-features {
+    padding-block-start: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+    padding-block-end: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+}
+
+.l-features__container {
+    max-width: 80rem;
+    /*1.280px*/
+    padding-inline: 1.5rem;
+    /*24px*/
+}
+
+/*width = width: 880 + padding-inline: 24px (.l-features)*/
+@media (min-width: 928px) {
+    .l-features__container {
+        padding-inline: 0;
+    }
+}
+
+/*-----------------------------------*\
+  #L-PRODUCTIVE
+\*-----------------------------------*/
+.l-productive {
+    padding-block-start: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+    padding-block-end: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+}
+
+.l-productive__container {
+    max-width: 77.1875rem;
+    /*1.235px*/
+    padding-inline: 1.5rem;
+    /*24px*/
+}
+
+/*min-width = max-width: 1.235 + padding-inline: 24px (.l-header)*/
+@media (min-width: 1283px) {
+    .l-productive__container {
+        padding-inline: 0;
+    }
+}
+
+
+/*-----------------------------------*\
+  #L-TESTEMONIALS
+\*-----------------------------------*/
+.l-testemonials {
+    padding-block-start: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+    padding-block-end: var(--space-2xl);
+    /* Space 2xl: 64px → 80px */
+}
+
+.l-testemonials__container {
+    max-width: 80rem;
+    /*1.280px*/
+    padding-inline: 1.5rem;
+    /*24px*/
+}
+
+
+/*-----------------------------------*\
+  #L-FORM
+\*-----------------------------------*/
+.l-form {
+    max-width: 54rem;
+    /*864px*/
+    margin-inline: 1.5rem;
+    /*24px*/
+    margin-top: var(--space-5xl);
+    position: relative;
+}
+
+/*min-width = max-width: 864 + padding-inline: 24px (.l-form)*/
+@media (min-width: 912px) {
+    .l-form {
+        margin-inline: auto;
+    }
+}
+
+.l-form__container--skin {
+    background-color: var(--pc-1);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.247);
+    border-radius: 9px;
+}
+
+.l-form__container {
+    position: absolute;
+    padding: 2.625rem 1.75rem 2.375rem;
+    /*42px 28px 38px*/
+    bottom: 0;
+}
+
+@media (min-width: 912px) {
+    .l-form__container {
+        padding: 2.625rem 4.8125rem 1.375rem;
+        /*42px 77px 22px*/
+        margin-inline: auto;
+    }
+}
+
+
+/*-----------------------------------*\
+  #L-FOOTER
+\*-----------------------------------*/
+.l-footer {
+    padding-block-start: 16.25rem;
+    /*260px*/
+    padding-block-end: 3.25rem;
+    /*52px*/
+}
+
+.l-footer__container {
+    max-width: 77.5rem;
+    /*1.240px*/
+    padding-inline: 1.75rem;
+    /*28px*/
+}
+
+/*min-width = max-width: 1.240 + padding-inline: 28px (.l-footer__container)*/
+@media (min-width: 1296px) {
+    .l-footer__container {
+        padding-inline: 0;
+    }
+}

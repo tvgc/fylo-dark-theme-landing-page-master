@@ -32,9 +32,9 @@
   -->
 
   <header class="l-header">
-    <nav class="c-nav l-container">
+    <nav class="l-header__container l-container c-nav">
 
-      <img src="" alt="" class="c-logo">
+      <img src="assets/images/logo.svg" alt="" class="c-logo">
 
       <div class="c-nav__menu">
         <ul class="c-nav__list">
@@ -72,22 +72,22 @@
     -->
 
     <section class="l-hero">
-      <div class="l-container">
+      <div class="l-hero__container l-container">
 
-        <figure>
+        <figure class="c-hero__figure">
           <img class="c-hero__img" src="assets/images/illustration-intro.png" alt="Fylo Logo">
         </figure>
 
-        <h1 class="c-title">
+        <h1 class="c-title c-hero__main-title c-hero__main-title--structure">
           All your files in one secure location, accessible anywhere.
         </h1>
 
-        <p class="c-content">
+        <p class="c-content c-hero__content c-hero__content--structure">
           Fylo stores all your most important files in one secure location. Access them wherever you need, share and
           collaborate with friends family, and co-workers.
         </p>
 
-        <button class="c-btn">Get Started</button>
+        <button class="c-btn c-btn--hero">Get Started</button>
 
       </div> <!--l-container-->
     </section> <!--l-hero-->
@@ -97,60 +97,60 @@
     -->
 
     <section class="l-features">
-      <div class="l-container">
+      <div class="l-features__container l-container">
         <div class="c-features__container">
 
           <div class="c-features__card">
-            <figure>
+            <figure class="c-features__figure">
               <img src="assets/images/icon-access-anywhere.svg" alt="" class="c-features__img">
             </figure>
 
-            <h3 class="c-title">Access your files, anywhere</h3>
+            <h3 class="c-title c-features__card-title">Access your files, anywhere</h3>
 
-            <p class="c-content">
+            <p class="c-content c-faetures__card-content">
               The ability to use a smartphone, tablet, or computer to access your account means your files follow you
               everywhere.
             </p>
-          </div> <!--c-card-->
+          </div> <!--1 // c-card-->
 
           <div class="c-features__card">
-            <figure>
-              <img src="assets/images/icon-access-anywhere.svg" alt="" class="c-features__img">
+            <figure class="c-features__figure">
+              <img src="assets/images/icon-security.svg" alt="" class="c-features__img">
             </figure>
 
-            <h3 class="c-title">Access your files, anywhere</h3>
+            <h3 class="c-title c-features__card-title">Security you can trust</h3>
 
-            <p class="c-content">
-              The ability to use a smartphone, tablet, or computer to access your account means your files follow you
-              everywhere.
+            <p class="c-content c-faetures__card-content">
+              2-factor authentication and user-controlled encryption are just a couple of the security features we allow
+              to help secure your files.
             </p>
-          </div> <!--c-card-->
+          </div> <!--2 // c-card-->
 
           <div class="c-features__card">
-            <figure>
-              <img src="assets/images/icon-access-anywhere.svg" alt="" class="c-features__img">
+            <figure class="c-features__figure">
+              <img src="assets/images/icon-collaboration.svg" alt="" class="c-features__img">
             </figure>
 
-            <h3 class="c-title">Access your files, anywhere</h3>
+            <h3 class="c-title c-features__card-title">Real-time collaboration</h3>
 
-            <p class="c-content">
-              The ability to use a smartphone, tablet, or computer to access your account means your files follow you
-              everywhere.
+            <p class="c-content c-faetures__card-content">
+              Securely share files and folders with friends, family and colleagues for live collaboration. No email
+              attachments required.
             </p>
-          </div> <!--c-card-->
+          </div> <!--3 // c-card-->
 
           <div class="c-features__card">
-            <figure>
-              <img src="assets/images/icon-access-anywhere.svg" alt="" class="c-features__img">
+            <figure class="c-features__figure">
+              <img src="assets/images/icon-any-file.svg" alt="" class="c-features__img">
             </figure>
 
-            <h3 class="c-title">Access your files, anywhere</h3>
+            <h3 class="c-title c-features__card-title">Store any type of file</h3>
 
-            <p class="c-content">
-              The ability to use a smartphone, tablet, or computer to access your account means your files follow you
-              everywhere.
+            <p class="c-content c-faetures__card-content">
+              Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types
+              to be securely stored and shared.
             </p>
-          </div> <!--c-card-->
+          </div> <!--4 // c-card-->
 
         </div> <!--c-features__container-->
       </div> <!--l-container-->
@@ -161,30 +161,33 @@
     -->
 
     <section class="l-productive">
-      <div class="l-container">
+      <div class="l-productive__container l-container">
         <div class="c-productive__container">
 
-          <figure>
+          <figure class="c-productive__figure">
             <img src="assets/images/illustration-stay-productive.png" alt="" class="c-productive__img">
           </figure>
 
           <div class="c-productive__content">
-            <h2 class="-c-title">
+            <h2 class="c-productive__main-title c-title">
               Stay productive,
               wherever you are
             </h2>
 
-            <p class="c-content">
+            <p class="c-productive__text c-content">
               Never let location be an issue when accessing your files. Fylo has you covered for all of your file
               storage needs.
             </p>
 
-            <p class="c-content">
+            <p class="c-productive__text c-content">
               Securely share files and folders with friends, family and colleagues for live collaboration. No email
               attachments required.
             </p>
 
-            <a href="" class="c-content__link">See how Fylo works</a>
+            <a href="" class="c-productive__link">
+              See how Fylo works
+              <img src="assets/images/icon-arrow.svg" alt="">
+            </a>
           </div> <!--c-productive__content-->
 
         </div> <!--c-productive__container-->
@@ -196,7 +199,7 @@
     -->
 
     <section class="l-testemonials">
-      <div class="l-container c-testemonials__container">
+      <div class="l-testemonials__container l-container c-testemonials__container">
         <div class="c-testemonials__item">
           <p class="c-content">
             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
@@ -262,20 +265,19 @@
 
     <section class="l-form">
 
-      <h2 class="c-title">
-        Get early access today
-      </h2>
-
-      <p class="c-content">
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
-        our support team would be happy to help you.
-      </p>
-
-      <form action="" class="c-form">
-        <input type="text" class="c-form__input" placeholder="E-mail address">
-
-        <button class="c-btn">Get Started For Free</button>
-      </form>
+      <div class="l-form__container l-form__container--skin">
+        <h2 class="c-title">
+          Get early access today
+        </h2>
+        <p class="c-content">
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
+          our support team would be happy to help you.
+        </p>
+        <form action="" class="c-form">
+          <input type="text" class="c-form__input" placeholder="E-mail address">
+          <button class="c-btn">Get Started For Free</button>
+        </form>
+      </div>
 
     </section> <!--l-form-->
 
@@ -286,7 +288,7 @@
   -->
 
   <footer class="l-footer">
-    <div class="l-container">
+    <div class="l-footer__container l-container">
       <div class="c-footer__img">
         <img src="assets/images/logo.svg" alt="" class="c-logo">
       </div>
