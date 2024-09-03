@@ -30,10 +30,10 @@
 
     /* Primary */
 
-    --pc-1: hsl(217, 28%, 15%);
-    --pc-2: hsl(218, 28%, 13%);
-    --pc-3: hsl(216, 53%, 9%);
-    --pc-4: hsl(219, 30%, 18%);
+    --pc-1: #1c2431;
+    --pc-2: #181f2a;
+    --pc-3: #0b1523;
+    --pc-4: #202a3c;
 
     /* Accent */
 
@@ -120,6 +120,8 @@
     --space-xs-s: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
     /* Space s-m: 16px → 30px */
     --space-s-m: clamp(1rem, 0.6919rem + 1.3146vw, 1.875rem);
+    /* 20px → 25px */
+    --fluid-20-25: clamp(1.25rem, 1.108rem + 0.6061vw, 1.5625rem);
     /* Space m-l: 24px → 40px */
     --space-m-l: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
     /* Space 6xl: 24px → 57px */
@@ -136,7 +138,7 @@
     --fluid-50-66: clamp(3.125rem, 2.6705rem + 1.9394vw, 4.125rem);
     /* Space 2xl-3xl: 64px → 120px */
     --space-2xl-3xl: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem);
-    /* 70px → px */
+    /* 70px → 90px */
     --fluid-70-90: clamp(4.375rem, 3.8068rem + 2.4242vw, 5.625rem);
     /* 80px → 104px */
     --fluid-80-104: clamp(5rem, 4.3182rem + 2.9091vw, 6.5rem);
