@@ -125,14 +125,14 @@
 /*-----------------------------------*\
   #L-TESTEMONIALS
 \*-----------------------------------*/
-.l-testemonials {
+.l-testimonials {
     padding-block-start: var(--space-2xl);
     /* Space 2xl: 64px → 80px */
     padding-block-end: var(--space-2xl);
     /* Space 2xl: 64px → 80px */
 }
 
-.l-testemonials__container {
+.l-testimonials__container {
     max-width: 80rem;
     /*1.280px*/
     padding-inline: 1.5rem;
@@ -150,6 +150,15 @@
     /*24px*/
     margin-top: var(--space-5xl);
     position: relative;
+    bottom: -10.9375rem;
+    /*175px*/
+}
+
+@media (min-width: 769px) {
+    .l-form {
+        bottom: -7.25rem;
+        /*116px*/
+    }
 }
 
 /*min-width = max-width: 864 + padding-inline: 24px (.l-form)*/
@@ -189,6 +198,7 @@
     /*260px*/
     padding-block-end: 3.25rem;
     /*52px*/
+    background-color: var(--pc-3);
 }
 
 .l-footer__container {

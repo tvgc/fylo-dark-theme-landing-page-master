@@ -128,8 +128,12 @@
     --fluid-24-57: clamp(1.5rem, 0.7738rem + 3.0986vw, 3.5625rem);
     /* Space 7xl: 24px → 73px */
     --fluid-24-73: clamp(1.5rem, 0.4217rem + 4.6009vw, 4.5625rem);
+    /* 32px → 36px */
+    --fluid-32-36: clamp(2rem, 1.8864rem + 0.4848vw, 2.25rem);
     /* Space l-xl: 32px → 60px */
     --space-l-xl: clamp(2rem, 1.3838rem + 2.6291vw, 3.75rem);
+    /* 35px → 52px */
+    --fluid-35-52: clamp(2.1875rem, 1.7045rem + 2.0606vw, 3.25rem);
     /* 48px → 56px */
     --fluid-48-56: clamp(3rem, 2.7727rem + 0.9697vw, 3.5rem);
     /* Space xl-2xl: 48px → 80px */
@@ -144,6 +148,8 @@
     --fluid-80-104: clamp(5rem, 4.3182rem + 2.9091vw, 6.5rem);
     /* Space 3xl-4xl: 96px → 160px */
     --space-3xl-4xl: clamp(6rem, 4.5915rem + 6.0094vw, 10rem);
+    /* 130px → 166px */
+    --fluid-125-155: clamp(7.8125rem, 6.9602rem + 3.6364vw, 9.6875rem);
     /* Space 5xl: 260px → 285px */
     --space-5xl: clamp(16.25rem, 15.318rem + 4.688vw, 17.8125rem);
     /* 240px → 280px */
