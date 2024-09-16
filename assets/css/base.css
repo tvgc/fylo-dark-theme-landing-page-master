@@ -37,13 +37,13 @@
 
     /* Accent */
 
-    --sc-1: hsl(176, 68%, 64%);
-    --sc-2: hsl(198, 60%, 50%);
-    --sc-3: hsl(0, 100%, 63%);
+    --sc-1: #65e2d9;
+    --sc-2: #339ecc;
+    --sc-3: #ff4242;
 
     /* Neutral */
 
-    --neutral1: hsla(0, 0%, 100%, 1);
+    --neutral1: #ffffff;
 
 
     /**
